@@ -1,3 +1,10 @@
+![Java](https://img.shields.io/badge/Java-25%2B-blue)
+![Maven](https://img.shields.io/badge/build-Maven-blue)
+![IRC](https://img.shields.io/badge/protocol-IRC-brightgreen)
+![Terminal UI](https://img.shields.io/badge/UI-terminal-lightgrey)
+![Status](https://img.shields.io/badge/status-educational-blue)
+![License](https://img.shields.io/github/license/jesse-grabowski/rits-irc-java)
+
 # RitsIRC
 
 A pure-Java IRC client and server implementation for learning network programming,
