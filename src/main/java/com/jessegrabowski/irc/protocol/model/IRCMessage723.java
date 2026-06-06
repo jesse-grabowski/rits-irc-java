@@ -1,12 +1,4 @@
 /*
- * This project is licensed under the MIT License.
- *
- * In addition to the rights granted under the MIT License, explicit permission
- * is granted to the faculty, instructors, teaching assistants, and evaluators
- * of Ritsumeikan University for unrestricted educational evaluation and grading.
- *
- * ---------------------------------------------------------------------------
- *
  * MIT License
  *
  * Copyright (c) 2026 Jesse Grabowski
