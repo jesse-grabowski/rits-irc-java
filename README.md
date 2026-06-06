@@ -1,12 +1,13 @@
 # RitsIRC
 
-This repository contains my solution to the final assignment for Ritsumeikan University’s 2025–2026 **53346 Network Systems** course.
+A pure-Java IRC client and server implementation for learning network programming,
+IRC protocol design, socket-based concurrency, terminal UIs, and DCC-style file transfer.
 
-RitsIRC is a mostly specification-compliant [Modern IRC](https://modern.ircdocs.horse/) client and server written in pure Java. **This is a toy project and is not intended for production use**. This project is not at all secure (SASL/TLS are not viable to configure in the context of this assignment), and has only been tested on macOS (although it should also work on Linux, it will not work on Windows due to the native `STTY` usage).
+RitsIRC implements much of the Modern IRC protocol, including private messages,
+channels, nicknames, server/client command handling, message parsing/marshalling,
+and file transfer through a DCC relay.
 
-## Team Members
-
-- Jesse Grabowski (2600230465-0)
+> Educational project. Not intended for production use; TLS/SASL are not implemented.
 
 ## TLDR
 
