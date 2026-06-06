@@ -28,28 +28,6 @@ and file transfer through a DCC relay.
 6. `/join #test` to join a channel named `#test`
 7. `/msg #test <message>` or enter text with no command if the channel is focused (prompt will be `[<nick>@<ip>/<focused channel>]`) to send a message to a channel
 
-### Evaluating the Networking Code
-
-1. Begin at `com.jessegrabowski.irc.network.IRCConnection` for the main IRC `Socket` wrapper, shared by the server and client.
-2. Next look at `com.jessegrabowski.irc.network.Acceptor` for the server-side `ServerSocket` listener code, including the accept loop.
-3. Check out `com.jessegrabowski.irc.client.dcc.DCCDownloader` and `com.jessegrabowski.irc.client.dcc.DCCUploader` for the client-side file transfer code, and `com.jessegrabowski.irc.server.dcc.DCCRelayEngine` and `com.jessegrabowski.irc.server.dcc.DCCRelayPipe` for the server-side file transfer code.
-
-### Evaluating the Protocol Code
-
-1. Begin with `com.jessegrabowski.irc.protocol.model.IRCMessage` and a few of its subclasses for the message model.
-2. Next look at `com.jessegrabowski.irc.protocol.IRCMessageUnmarshaller` for the main message parsing logic.
-3. Finally look at `com.jessegrabowski.irc.protocol.IRCMessageMarshaller` for the main message serialization logic.
-
-### Evaluating the Client
-
-1. Begin at the entrypoint: `com.jessegrabowski.irc.client.IRCClient`
-2. Check `com.jessegrabowski.irc.client.IRCClientEngine` for connection management and protocol handlers
-
-### Evaluating the Server
-
-1. Begin at the entrypoint: `com.jessegrabowski.irc.server.IRCServer`
-2. Check `com.jessegrabowski.irc.server.IRCServerEngine` for connection management and protocol handlers
-
 ## Project Structure
 
 RitsIRC is built using [Apache Maven](https://maven.apache.org/) and generally follows Maven’s standard project layout, with a few additional directories:
