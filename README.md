@@ -7,14 +7,17 @@
 
 # RitsIRC
 
-A pure-Java IRC client and server implementation for learning network programming,
+A pure-Java IRC client and server implementation for tinkering with network programming,
 IRC protocol design, socket-based concurrency, terminal UIs, and DCC-style file transfer.
 
-RitsIRC implements much of the Modern IRC protocol, including private messages,
-channels, nicknames, server/client command handling, message parsing/marshalling,
-and file transfer through a DCC relay.
+RitsIRC is a Maven-based implementation of much of the Modern IRC protocol. It includes
+private messages, channels, nicknames, server/client command handling, message
+parsing/marshalling, a hand-rolled terminal UI, and file transfer through a DCC relay.
 
-> Educational project. Not intended for production use; TLS/SASL are not implemented.
+It also includes partial IRCv3 support, including CAP negotiation, message-tags parsing,
+TAGMSG support, away-notify, cap-notify, server-time, and echo-message.
+
+> Toy project, not intended for production use; TLS/SASL are not implemented
 
 ## TLDR
 
